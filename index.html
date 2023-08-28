@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="https://cdn-icons-png.flaticon.com/512/73/73944.png"
+      type="image/icon type"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>Formulario</title>
+  </head>
+
+  <header class="header-content">
+    <img
+      class="nav-icon"
+      src="https://cdn-icons-png.flaticon.com/512/270/270024.png"
+      alt="nav-icon"
+    />
+    <h1 class="header-title">Formulario WEB</h1>
+  </header>
+
+  <body>
+    <div class="form-interative" id="question1">
+      <div>
+        <h1>Qual é a sua profissão?</h1>
+      </div>
+      <div class="btn-container">
+        <button onclick="showNextQuestion(2)">Web</button>
+        <button onclick="showNextQuestion(11)">Mobile</button>
+      </div>
+    </div>
+
+    <div class="form-interative" id="question2" style="display: none">
+      <div>
+        <h1>Qual área deseja atuar?</h1>
+      </div>
+      <div class="btn-container">
+        <button onclick="showNextQuestion(4)">Front-End</button>
+        <button onclick="showNextQuestion(3)">Back-End</button>
+      </div>
+    </div>
+
+    <div class="form-interative" id="question11" style="display: none">
+      <div>
+        <h1>Qual área deseja atuar?</h1>
+      </div>
+      <div class="btn-container">
+        <button onclick="showNextQuestion(12)">Front-End</button>
+        <button onclick="showNextQuestion(16)">Back-End</button>
+      </div>
+    </div>
+
+    <div class="form-interative" id="question12" style="display: none">
+      <div>
+        <h1>Qual vantagem você deseja aprender em Front-End?</h1>
+      </div>
+      <div class="btn-container">
+        <div class="response-box">
+          <button onclick="showNextQuestion(13)">Varias bibliotecas</button>
+          <button onclick="showNextQuestion(14)">Fácil compreensão</button>
+          <button onclick="showNextQuestion(15)">Maior comunidade</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-interative" id="question13" style="display: none">
+      <div>
+        <h1>
+          Ótima escolha, esssas são as 3 melhores linguagens de acordo com a
+          vantagem escolhida:
+        </h1>
+      </div>
+      <div class="btn-container">
+        <p class="response">Swift</p>
+        <p class="response">Java</p>
+        <p class="response">React Native</p>
+      </div>
+    </div>
+
+    <div class="form-interative" id="question14" style="display: none">
+      <div>
+        <h1>
+          Ótima escolha, esssas são as 3 melhores linguagens de acordo com a
+          vantagem escolhida:
+        </h1>
+      </div>
+      <div class="btn-container">
+        <p class="response">Phyton (Kivy e o BeeWare)</p>
+        <p class="response">React Native</p>
+        <p class="response">Dart (Flutter)</p>
+      </div>
+    </div>
+
+    <div class="form-interative" id="question15" style="display: none">
+      <div>
+        <h1>
+          Ótima escolha, esssas são as 3 melhores linguagens de acordo com a
+          vantagem escolhida:
+        </h1>
+      </div>
+      <div class="btn-container">
+        <p class="response">Java</p>
+        <p class="response">React Native</p>
+        <p class="response">Swift</p>
+      </div>
+    </div>
+
+    <div class="form-interative" id="question16" style="display: none">
+      <div>
+        <h1>Qual vantagem você deseja aprender em Back-End?</h1>
+      </div>
+      <div class="btn-container">
+        <div class="response-box">
+          <button onclick="showNextQuestion(17)">Rapidez</button>
+          <button onclick="showNextQuestion(18)">Programação intuitiva</button>
+          <button onclick="showNextQuestion(19)">Facil integração</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-interative" id="question17" style="display: none">
+      <div>
+        <h1>
+          Ótima escolha, esssas são as 3 melhores linguagens de acordo com a
+          vantagem escolhida:
+        </h1>
+      </div>
+      <div class="btn-container">
+        <p class="response">Dart (Flutter)</p>
+        <p class="response">React</p>
+        <p class="response">Java</p>
+      </div>
+    </div>
+
+    <div class="form-interative" id="question18" style="display: none">
+      <div>
+        <h1>
+          Ótima escolha, esssas são as 3 melhores linguagens de acordo com a
+          vantagem escolhida:
+        </h1>
+      </div>
+      <div class="btn-container">
+        <p class="response">Phyton</p>
+        <p class="response">JavaScript</p>
+        <p class="response">Dart (Flutter)</p>
+      </div>
+    </div>
+
+    <div class="form-interative" id="question19" style="display: none">
+      <div>
+        <h1>
+          Ótima escolha, esssas são as 3 melhores linguagens de acordo com a
+          vantagem escolhida:
+        </h1>
+      </div>
+      <div class="btn-container">
+        <p class="response">Java</p>
+        <p class="response">Dart (Flutter)</p>
+        <p class="response">Swift</p>
+      </div>
+    </div>
+
+    <div class="form-interative" id="question3" style="display: none">
+      <div>
+        <h1>Qual vantagem você deseja aprender em Back-End?</h1>
+      </div>
+      <div>
+        <div class="response-box">
+          <button onclick="showNextQuestion(8)">Rapidez</button>
+          <button onclick="showNextQuestion(9)">Programação intuitiva</button>
+          <button onclick="showNextQuestion(10)">Facil integração</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-interative" id="question8" style="display: none">
+      <div>
+        <h1>
+          Ótima escolha, esssas são as 3 melhores linguagens de acordo com a
+          vantagem escolhida:
+        </h1>
+      </div>
+      <div class="btn-container">
+        <p class="response">C/C#</p>
+        <p class="response">Rust</p>
+        <p class="response">Go</p>
+      </div>
+    </div>
+
+    <div class="form-interative" id="question9" style="display: none">
+      <div>
+        <h1>
+          Ótima escolha, esssas são as 3 melhores linguagens de acordo com a
+          vantagem escolhida:
+        </h1>
+      </div>
+      <div class="btn-container">
+        <p class="response">Phyton</p>
+        <p class="response">JavaScript</p>
+        <p class="response">Scratch</p>
+      </div>
+    </div>
+
+    <div class="form-interative" id="question10" style="display: none">
+      <div>
+        <h1>
+          Ótima escolha, esssas são as 3 melhores linguagens de acordo com a
+          vantagem escolhida:
+        </h1>
+      </div>
+      <div class="btn-container">
+        <p class="response">Phyton</p>
+        <p class="response">JavaScript</p>
+        <p class="response">Java</p>
+      </div>
+    </div>
+
+    <div class="form-interative" id="question4" style="display: none">
+      <div>
+        <h1>Qual vantagem você deseja aprender em Front-End?</h1>
+      </div>
+      <div class="btn-container">
+        <div class="response-box">
+          <button onclick="showNextQuestion(5)">Varias bibliotecas</button>
+          <button onclick="showNextQuestion(6)">Fácil compreensão</button>
+          <button onclick="showNextQuestion(7)">Maior comunidade</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-interative" id="question5" style="display: none">
+      <div>
+        <h1>
+          Ótima escolha, esssas são as 3 melhores bibliotecas de acordo com a
+          vantagem escolhida:
+        </h1>
+      </div>
+      <div class="btn-container">
+        <p class="response">React (JavaScript)</p>
+        <p class="response">Vue (JavaScript)</p>
+        <p class="response">Angular (JavaScript)</p>
+      </div>
+    </div>
+
+    <div class="form-interative" id="question6" style="display: none">
+      <div>
+        <h1>
+          Ótima escolha, esssas são as 3 melhores linguagens de acordo com a
+          vantagem escolhida:
+        </h1>
+      </div>
+      <div class="btn-container">
+        <p class="response">JavaScript</p>
+        <p class="response">Phyton</p>
+        <p class="response">TypeScript</p>
+      </div>
+    </div>
+
+    <div class="form-interative" id="question7" style="display: none">
+      <div>
+        <h1>
+          Ótima escolha, esssas são as 3 melhores linguagens de acordo com a
+          vantagem escolhida:
+        </h1>
+      </div>
+      <div class="btn-container">
+        <p class="response">JavaScript</p>
+        <p class="response">Phyton</p>
+        <p class="response">React</p>
+      </div>
+    </div>
+  </body>
+  <script src="./scripts/form.js"></script>
+  <footer></footer>
+</html>
